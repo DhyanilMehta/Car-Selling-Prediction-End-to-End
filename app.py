@@ -65,7 +65,7 @@ def predict():
         output = round(prediction[0], 2)
         if output < 0:
             return render_template('index.html',
-                                   prediction_texts="Sorry you cannot sell this car")
+                                   prediction_text="Sorry you cannot sell this car")
         else:
             return render_template('index.html',
                                    prediction_text=f"You can sell the car at {output} Lakhs")
